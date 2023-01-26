@@ -1,0 +1,16 @@
+{
+  "name": "basup-ugcmod-app",
+  "version": "1.0.0",
+  "description": "a set of Lamda functions to start and monitor the execution of Rekognition Moderation Jobs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gbatt@amazon.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@aws-sdk/client-rekognition": "^3.204.0",
+    "@aws-sdk/client-s3": "^3.204.0",
+    "@aws-sdk/client-sns": "^3.210.0"
+  }
+}

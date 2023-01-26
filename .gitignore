@@ -1,0 +1,15 @@
+*.js
+!app/*.js
+!jest.config.js
+*.d.ts
+node_modules
+00-deploy.sh
+10-upload.sh
+assets/cdk-outputs.json
+assets/*.mp4
+.DS_Store
+
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out

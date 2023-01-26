@@ -1,0 +1,185 @@
+***** starting simulated flow *****
+{
+  version: '0',
+  id: '17793124-05d4-b198-2fde-7ededc63b103',
+  'detail-type': 'Object Created',
+  source: 'aws.s3',
+  account: 'REDACTED',
+  time: '2021-11-12T00:00:00Z',
+  region: 'us-west-2',
+  resources: [ 'REDACTED' ],
+  detail: {
+    version: '0',
+    bucket: { name: 'REDACTED' },
+    object: {
+      key: 'public/upload/room.mp4',
+      size: 5,
+      etag: 'b1946ac92492d2347c6235b4d2611184',
+      'version-id': 'IYV3p45BT0ac8hjHg1houSdS1a.Mro8e',
+      sequencer: '00617F08299329D189'
+    },
+    'request-id': 'N4N7GDK58NMKJ12R',
+    requester: 'REDACTED',
+    'source-ip-address': '1.2.3.4',
+    reason: 'PutObject'
+  },
+  uuid: 'TEST_UUID',
+  JobId: 'b593f3d23bff56b6723ac0757d4fa4a75d76295af5f668302b2f1eacbf7175af',
+  waitSeconds: 3,
+  status: 'IN_PROGRESS',
+  bucket: 'REDACTED',
+  key: 'public/upload/room.mp4',
+  failureReason: undefined
+}
+Passed Test for JobId
+Passed Test for status
+cached b593f3d23bff56b6723ac0757d4fa4a75d76295af5f668302b2f1eacbf7175af as __JobId
+waiting for 3 second
+***** now invoking getStatus *****
+{
+  version: '0',
+  id: '17793124-05d4-b198-2fde-7ededc63b103',
+  'detail-type': 'Object Created',
+  source: 'aws.s3',
+  account: 'REDACTED',
+  time: '2021-11-12T00:00:00Z',
+  region: 'us-west-2',
+  resources: [ 'REDACTED' ],
+  detail: {
+    version: '0',
+    bucket: { name: 'REDACTED' },
+    object: {
+      key: 'public/upload/room.mp4',
+      size: 5,
+      etag: 'b1946ac92492d2347c6235b4d2611184',
+      'version-id': 'IYV3p45BT0ac8hjHg1houSdS1a.Mro8e',
+      sequencer: '00617F08299329D189'
+    },
+    'request-id': 'N4N7GDK58NMKJ12R',
+    requester: 'REDACTED',
+    'source-ip-address': '1.2.3.4',
+    reason: 'PutObject'
+  },
+  uuid: 'TEST_UUID',
+  JobId: 'b593f3d23bff56b6723ac0757d4fa4a75d76295af5f668302b2f1eacbf7175af',
+  waitSeconds: 3,
+  status: 'NOT_CLEAR',
+  bucket: 'REDACTED',
+  key: 'public/upload/room.mp4',
+  failureReason: undefined,
+  __JobId: 'b593f3d23bff56b6723ac0757d4fa4a75d76295af5f668302b2f1eacbf7175af'
+}
+Passed Unchanged Test for JobId
+Passed Test for uuid
+waiting for 3 second
+***** invoking getStatus again *****
+{
+  version: '0',
+  id: '17793124-05d4-b198-2fde-7ededc63b103',
+  'detail-type': 'Object Created',
+  source: 'aws.s3',
+  account: 'REDACTED',
+  time: '2021-11-12T00:00:00Z',
+  region: 'us-west-2',
+  resources: [ 'REDACTED' ],
+  detail: {
+    version: '0',
+    bucket: { name: 'REDACTED' },
+    object: {
+      key: 'public/upload/room.mp4',
+      size: 5,
+      etag: 'b1946ac92492d2347c6235b4d2611184',
+      'version-id': 'IYV3p45BT0ac8hjHg1houSdS1a.Mro8e',
+      sequencer: '00617F08299329D189'
+    },
+    'request-id': 'N4N7GDK58NMKJ12R',
+    requester: 'REDACTED',
+    'source-ip-address': '1.2.3.4',
+    reason: 'PutObject'
+  },
+  uuid: 'TEST_UUID',
+  JobId: 'b593f3d23bff56b6723ac0757d4fa4a75d76295af5f668302b2f1eacbf7175af',
+  waitSeconds: 3,
+  status: 'NOT_CLEAR',
+  bucket: 'REDACTED',
+  key: 'public/upload/room.mp4',
+  failureReason: undefined,
+  __JobId: 'b593f3d23bff56b6723ac0757d4fa4a75d76295af5f668302b2f1eacbf7175af'
+}
+Passed Test for uuid
+Passed Unchanged Test for JobId
+Passed Test for status
+***** replicating to target bucket *****
+{
+  version: '0',
+  id: '17793124-05d4-b198-2fde-7ededc63b103',
+  'detail-type': 'Object Created',
+  source: 'aws.s3',
+  account: 'REDACTED',
+  time: '2021-11-12T00:00:00Z',
+  region: 'us-west-2',
+  resources: [ 'REDACTED' ],
+  detail: {
+    version: '0',
+    bucket: { name: 'REDACTED' },
+    object: {
+      key: 'public/upload/room.mp4',
+      size: 5,
+      etag: 'b1946ac92492d2347c6235b4d2611184',
+      'version-id': 'IYV3p45BT0ac8hjHg1houSdS1a.Mro8e',
+      sequencer: '00617F08299329D189'
+    },
+    'request-id': 'N4N7GDK58NMKJ12R',
+    requester: 'REDACTED',
+    'source-ip-address': '1.2.3.4',
+    reason: 'PutObject'
+  },
+  uuid: 'TEST_UUID',
+  JobId: 'b593f3d23bff56b6723ac0757d4fa4a75d76295af5f668302b2f1eacbf7175af',
+  waitSeconds: 3,
+  status: 'SUCCEEDED',
+  bucket: 'REDACTED',
+  key: 'public/upload/room.mp4',
+  failureReason: undefined,
+  __JobId: 'b593f3d23bff56b6723ac0757d4fa4a75d76295af5f668302b2f1eacbf7175af'
+}
+Passed Unchanged Test for JobId
+Passed Test for uuid
+Passed Test for status
+***** sending notification to SNS *****
+{
+  version: '0',
+  id: '17793124-05d4-b198-2fde-7ededc63b103',
+  'detail-type': 'Object Created',
+  source: 'aws.s3',
+  account: 'REDACTED',
+  time: '2021-11-12T00:00:00Z',
+  region: 'us-west-2',
+  resources: [ 'REDACTED' ],
+  detail: {
+    version: '0',
+    bucket: { name: 'REDACTED' },
+    object: {
+      key: 'public/upload/room.mp4',
+      size: 5,
+      etag: 'b1946ac92492d2347c6235b4d2611184',
+      'version-id': 'IYV3p45BT0ac8hjHg1houSdS1a.Mro8e',
+      sequencer: '00617F08299329D189'
+    },
+    'request-id': 'N4N7GDK58NMKJ12R',
+    requester: 'REDACTED',
+    'source-ip-address': '1.2.3.4',
+    reason: 'PutObject'
+  },
+  uuid: 'TEST_UUID',
+  JobId: 'b593f3d23bff56b6723ac0757d4fa4a75d76295af5f668302b2f1eacbf7175af',
+  waitSeconds: 3,
+  status: 'NOTIFIED',
+  bucket: 'REDACTED',
+  key: 'public/upload/room.mp4',
+  failureReason: undefined,
+  __JobId: 'b593f3d23bff56b6723ac0757d4fa4a75d76295af5f668302b2f1eacbf7175af'
+}
+Passed Unchanged Test for JobId
+Passed Test for uuid
+Passed Test for status
