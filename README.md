@@ -3,15 +3,15 @@
 ## Introduction
 This code sample illustrates a minimal User Generated Content Moderation Pipeline
 for video files. It makes use of Rekognition Moderation capabilities to scan 
-video content for inappropiate images. The rationale behind this code sample is 
+video content for inappropriate images. The rationale behind this code sample is 
 to block UGC from progressing further in the analysis pipeline, so that customers 
-don't perform AI/ML workloads on inappropiate content.
+don't perform AI/ML workloads on inappropriate content.
 
 ## Process
 - Users upload media content to the inspection bucket deployed by the code sample
 - An upload notification is sent on EventBridge which triggers the UGC state machine
 ![assets/moderation-workflow.png](assets/moderation-workflow.png)
-- if the video is clear from inappropiate content, it gets replicated to
+- if the video is clear from inappropriate content, it gets replicated to
 a destination bucket
 - otherwise, an email is sent to the moderation team for further inspection
 
