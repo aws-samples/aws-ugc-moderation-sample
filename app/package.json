@@ -9,8 +9,8 @@
   "author": "gbatt@amazon.com",
   "license": "ISC",
   "devDependencies": {
-    "@aws-sdk/client-rekognition": "^3.204.0",
-    "@aws-sdk/client-s3": "^3.204.0",
-    "@aws-sdk/client-sns": "^3.210.0"
+    "@aws-sdk/client-rekognition": "^3.351.0",
+    "@aws-sdk/client-s3": "^3.350.0",
+    "@aws-sdk/client-sns": "^3.350.0"
   }
 }
