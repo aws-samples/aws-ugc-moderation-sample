@@ -78,7 +78,7 @@ export class BasupUgcStackStack extends cdk.Stack {
     /* WORKFLOW LAMBDA FUNCTIONS */
     
     const submitLambda = new Lambda.Function(this, 'UGCModSubmitJobLambda', {
-      runtime: Lambda.Runtime.NODEJS_16_X,
+      runtime: Lambda.Runtime.NODEJS_20_X,
       code: Lambda.Code.fromAsset(path.join(__dirname, "../app" )),
       architecture: Lambda.Architecture.ARM_64,
       handler: 'index.submit',
@@ -102,7 +102,7 @@ export class BasupUgcStackStack extends cdk.Stack {
     UGCInspectionBucket.grantRead(submitLambda)
     
     const getStatusLambda = new Lambda.Function(this, 'UGCModGetStatusLambda', {
-      runtime: Lambda.Runtime.NODEJS_16_X,
+      runtime: Lambda.Runtime.NODEJS_20_X,
       code: Lambda.Code.fromAsset(path.join(__dirname, "../app" )),
       architecture: Lambda.Architecture.ARM_64,
       handler: 'index.getStatus',
@@ -126,7 +126,7 @@ export class BasupUgcStackStack extends cdk.Stack {
     
     
     const replicateToMIELambda = new Lambda.Function(this, 'UGCModReplicateToMIELambda', {
-      runtime: Lambda.Runtime.NODEJS_16_X,
+      runtime: Lambda.Runtime.NODEJS_20_X,
       code: Lambda.Code.fromAsset(path.join(__dirname, "../app" )),
       architecture: Lambda.Architecture.ARM_64,
       handler: 'index.replicateToMIE',
@@ -140,7 +140,7 @@ export class BasupUgcStackStack extends cdk.Stack {
     MIEReplicationBucket.grantWrite(replicateToMIELambda)
     
     const notifyModerationEventLambda = new Lambda.Function(this, 'UGCnotifyModerationEventLambda', {
-      runtime: Lambda.Runtime.NODEJS_16_X,
+      runtime: Lambda.Runtime.NODEJS_20_X,
       code: Lambda.Code.fromAsset(path.join(__dirname, "../app" )),
       architecture: Lambda.Architecture.ARM_64,
       handler: 'index.notifyModerationEvent',
